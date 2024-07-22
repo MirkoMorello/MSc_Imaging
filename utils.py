@@ -1,12 +1,8 @@
 import os
-import cv2
 import numpy as np
 import torch
 import torch.nn as nn
 import pickle
-
-
-
 
 class FocalLoss(nn.Module):
     def __init__(self, alpha=0.25, gamma=2, weight=None, ignore_index=255):
@@ -22,8 +18,6 @@ class FocalLoss(nn.Module):
         pt = torch.exp(-logpt)
         loss = self.alpha * (1 - pt) ** self.gamma * logpt
         return loss.mean()
-    
-
 
 class DiceLoss(nn.Module):
     def __init__(self, smooth=1e-5):

@@ -72,7 +72,7 @@ class CustomNet(nn.Module):
         return out
 
 
-# this is the second version, the used one in the paper
+# this is the second version, the one we used
 
 class AttentionBlock(nn.Module):
     def __init__(self, in_channels):
