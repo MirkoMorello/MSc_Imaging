@@ -206,7 +206,7 @@ class CustomSegmentationModel(nn.Module):
 
 
 
-# this was an experiment, it is not used in the paper    
+# this was an experiment, not used
     
 # class AttentionBlock(nn.Module):
 #     def __init__(self, in_channels):
